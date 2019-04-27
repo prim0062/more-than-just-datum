@@ -5,98 +5,343 @@
   <title>Events Calendar</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700" rel="stylesheet">
 </head>
 <body>
-  <main class="pad-t pad-b-2 gutter">
-    <div>
-      <div class="table-wrapper">
-        <table class="push-0">
-          <caption class="giga italic text-center bold">November, 1963</caption>
+  <main>
+    <header class="grid pad-t-1-2 pad-b-1-2 gutter-1-2 push-1-4">
+      <div class="unit m-1-3 l-1-4">
+        <img class="img-flex logo" src="images/logo.svg" alt="Playground Finder">
+      </div>
+      <div class="unit xs-1 s-1 m-2-3 l-3-4 pad-t">
+        <div class="search-bar grid-middle">
+          <img class="unit search-icon island-1-8" src="images/search.svg" alt="Search">
+        </div>
+      </div>
+    </header>
+
+    <div class="gutter-1-2 grid m-1-3 l-1-4">
+      <h1 class="unit bold giga push-1-2 pad-t-1-4">Nearest playgrounds</h1>
+      <div class="unit card island-1-2 push-1-2 xs-1">
+        <p class="mega bold push-0">373</p>
+        <dl class="list-group push-0">
+          <dt class="milli italic s-1-2">Distance</dt>
+          <dd class="push-0 s-1-3 m-1">0.75 km</dd>
+        </dl>
+      </div>
+
+      <div class="unit card island-1-2 push-1-2 xs-1">
+        <p class="mega bold push-0">1700</p>
+        <dl class="list-group push-0">
+          <dt class="milli italic s-1-2">Distance</dt>
+          <dd class="push-0 s-1-3 m-1">2.58 km</dd>
+        </dl>
+      </div>
+
+      <div class="unit card island-1-2 push-1-2 xs-1">
+        <p class="mega bold push-0">960</p>
+        <dl class="list-group push-0">
+          <dt class="milli italic s-1-2">Distance</dt>
+          <dd class="push-0 s-1-3 m-1">3.03 km</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="gutter-1-2 table xs-1 s-1 m-2-3 l-3-4 right">
+      <h2 class="bold giga push-1-2 pad-t-1-2 gutter-1-4">Playgrounds in the city</h2>
+      <div class="scrollable">
+        <table>
+          <caption class="hidden"></caption>
           <thead>
-            <tr>
-              <th scope="col">Sun</th>
-              <th scope="col">Mon</th>
-              <th scope="col">Tue</th>
-              <th scope="col">Wed</th>
-              <th scope="col">Thu</th>
-              <th scope="col">Fri</th>
-              <th scope="col">Sat</th>
+            <tr class="kilo">
+              <th class="park-id" scope="col">Park ID</th>
+              <th class="type" scope="col">Park type</th>
+              <th class="age" scope="col">Age group</th>
+              <th class="swings" scope="col">Swings</th>
+              <th class="slides" scope="col">Slides</th>
+              <th class="seesaws" scope="col">Seesaws</th>
+              <th class="sandboxes" scope="col">Sandboxes</th>
+              <th class="playhouses" scope="col">Playhouses</th>
             </tr>
           </thead>
+
           <tbody>
-            <tr class="collumn-height mega">
-              <td colspan="5">&nbsp;</td>
-              <td class="text-right bold">1</td>
-              <td class="text-right bold">2</td>
+            <tr>
+              <th scope="row">545</th>
+              <td>Play area</td>
+              <td>Junior</td>
+              <td>Yes</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
             </tr>
-            <tr class="collumn-height mega">
-              <td class="text-right bold">3
-                <ul class="milli list-group text-left pad-t-1-4">
-                  <li class="card-grey island-1-8 gutter-1-4">Vostok 3 & 6 launched</li>
-                </ul>
-              </td>
-              <td class="text-right bold">4</td>
-              <td class="text-right bold">5</td>
-              <td class="text-right bold">6</td>
-              <td class="text-right bold">7</td>
-              <td class="text-right bold">8</td>
-              <td class="text-right bold">9</td>
+
+            <tr>
+              <th scope="row">81</th>
+              <td>Play area</td>
+              <td>Toddler</td>
+              <td>Yes</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
             </tr>
-            <tr class="collumn-height mega">
-              <td class="text-right bold">10</td>
-              <td class="text-right bold">11
-                <ul class="milli list-group text-left pad-t-1-4 push-0">
-                  <li class="card-red island-1-8 gutter-1-4 push-1-8">Remembrance Day</li>
-                  <li class="card-grey island-1-8 gutter-1-4 push-1-4">Kosmos 21 failed to escape orbit</li>
-                </ul>
-              </td>
-              <td class="text-right bold">12</td>
-              <td class="text-right bold">13</td>
-              <td class="text-right bold">14</td>
-              <td class="text-right bold">15
-                <ul class="milli list-group text-left pad-t-1-4 push-0">
-                  <li class="card-green island-1-8 gutter-1-4 push-1-8">Surtsey Island created</li>
-                  <li class="card-green island-1-8 gutter-1-4">Robert W. Smith set altitude record</li>
-                </ul>
-              </td>
-              <td class="text-right bold">16</td>
+
+            <tr>
+              <th scope="row">140</th>
+              <td>Play structure</td>
+              <td>Junior</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
             </tr>
-            <tr class="collumn-height mega">
-              <td class="text-right bold">17</td>
-              <td class="text-right bold">18</td>
-              <td class="text-right bold">19</td>
-              <td class="text-right bold">20</td>
-              <td class="text-right bold">21
-                <ul class="milli list-group text-left pad-t-1-4 push-0">
-                  <li class="card-grey island-1-8 gutter-1-4 push-1-8">India launched its first rocket</li>
-                </ul>
-              </td>
-              <td class="text-right bold">22
-                <ul class="milli list-group text-left pad-t-1-4">
-                  <li class="card-blue island-1-8 gutter-1-4">Death of Aldous Huxley</li>
-                </ul>
-              </td>
-              <td class="text-right bold">23
-                <ul class="milli list-group text-left pad-t-1-4 push-0">
-                  <li class="card-blue island-1-8 gutter-1-4 push-1-8">Doctor Who premiered</li>
-                </ul>
-              </td>
+
+            <tr>
+              <th scope="row">376</th>
+              <td>Play area</td>
+              <td>Toddler</td>
+              <td>Yes</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
             </tr>
-            <tr class="collumn-height mega">
-              <td class="text-right bold">24</td>
-              <td class="text-right bold">25</td>
-              <td class="text-right bold">26
-                <ul class="milli list-group text-left pad-t-1-4 push-0">
-                  <li class="card-grey island-1-8 gutter-1-4 push-1-8">Explorer 18 launched</li>
-                </ul>
-              </td>
-              <td class="text-right bold">27</td>
-              <td class="text-right bold">28</td>
-              <td class="text-right bold">29</td>
-              <td class="text-right bold">30</td>
+
+            <tr>
+              <th scope="row">373</th>
+              <td>Play area</td>
+              <td>Junior</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>Yes</td>
+            </tr>
+
+            <tr>
+              <th scope="row">310</th>
+              <td>Play area</td>
+              <td>Toddler</td>
+              <td>No</td>
+              <td>Yes</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+            </tr>
+
+            <tr>
+              <th scope="row">1133</th>
+              <td>Play area</td>
+              <td>Toddler</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+            </tr>
+
+            <tr>
+              <th scope="row">1032</th>
+              <td>Play area</td>
+              <td>Toddler</td>
+              <td>No</td>
+              <td>No</td>
+              <td>Yes</td>
+              <td>No</td>
+              <td>No</td>
+            </tr>
+
+            <tr>
+              <th scope="row">1647</th>
+              <td>Play area</td>
+              <td>Toddler</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>Yes</td>
+              <td>No</td>
+            </tr>
+
+            <tr>
+              <th scope="row">1700</th>
+              <td>Play structure</td>
+              <td>Junior</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+            </tr>
+
+            <tr>
+              <th scope="row">1213</th>
+              <td>Play structure</td>
+              <td>Toddler</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+            </tr>
+
+            <tr>
+              <th scope="row">2452</th>
+              <td>Play area</td>
+              <td>Junior</td>
+              <td>Yes</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+            </tr>
+
+            <tr>
+              <th scope="row">1010</th>
+              <td>Play area</td>
+              <td>Toddler</td>
+              <td>No</td>
+              <td>Yes</td>
+              <td>No</td>
+              <td>Yes</td>
+              <td>No</td>
+            </tr>
+
+            <tr>
+              <th scope="row">960</th>
+              <td>Play structure</td>
+              <td>Junior</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+            </tr>
+
+            <tr>
+              <th scope="row">555</th>
+              <td>Play structure</td>
+              <td>senior</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+            </tr>
+
+            <tr>
+              <th scope="row">403</th>
+              <td>Play structure</td>
+              <td>Toddler</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+            </tr>
+
+            <tr>
+              <th scope="row">89</th>
+              <td>Play area</td>
+              <td>Junior</td>
+              <td>Yes</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+            </tr>
+
+            <tr>
+              <th scope="row">786</th>
+              <td>Play area</td>
+              <td>Toddler</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+            </tr>
+
+            <tr>
+              <th scope="row">108</th>
+              <td>Play structure</td>
+              <td>Junior</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+            </tr>
+
+            <tr>
+              <th scope="row">686</th>
+              <td>Play structure</td>
+              <td>Junior</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+            </tr>
+
+            <tr>
+              <th scope="row">1083</th>
+              <td>Play area</td>
+              <td>Toddler</td>
+              <td>Yes</td>
+              <td>No</td>
+              <td>Yes</td>
+              <td>No</td>
+              <td>No</td>
+            </tr>
+
+            <tr>
+              <th scope="row">806</th>
+              <td>Play structure</td>
+              <td>senior</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+            </tr>
+
+            <tr>
+              <th scope="row">1032</th>
+              <td>Play area</td>
+              <td>Toddler</td>
+              <td>Yes</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+            </tr>
+
+            <tr>
+              <th scope="row">65</th>
+              <td>Play structure</td>
+              <td>Toddler</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+            </tr>
+
+            <tr>
+              <th scope="row">609</th>
+              <td>Play area</td>
+              <td>Junior</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
             </tr>
           </tbody>
         </table>

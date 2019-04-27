@@ -1,3 +1,63 @@
 html {
-  font-family: 'IBM   Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: #efefef;
+}
+
+header {
+  background-color: #ddd;
+}
+
+.table {
+  background-color: #fff;
+}
+
+.logo {
+  max-width: 200px;
+}
+
+.search-icon {
+  max-width: 23px;
+  max-height: 23px;
+}
+
+.search-bar {
+  background-color: #fff;
+  border: #666 2px solid;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.park-id {
+  width: 5.6em;
+}
+
+.type {
+  width: 5.75em;
+}
+
+.age {
+  width: 5.5em;
+}
+
+.swings {
+  width: 6em;
+}
+
+.slides {
+  width: 6em;
+}
+
+.seesaws {
+  width: 6em;
+}
+
+.sandboxes {
+  width: 6em;
+}
+
+.playhouses {
+  width: 6em;
 }
